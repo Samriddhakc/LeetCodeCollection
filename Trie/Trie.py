@@ -59,6 +59,18 @@ class Trie:
 
         return p_crawl.isEndNode
 
+    def isPrefix(self, pref):
+
+        p_crawl = self.root
+
+        for p in pref:
+            if not p_crawl.children[self.getIndex(p)]:
+                return None, False
+            p_crawl = p_crawl.children[self.getIndex(p)]
+
+        return p_crawl, True
+
+
 
 if __name__ == "__main__":
     trie_ex = Trie()
