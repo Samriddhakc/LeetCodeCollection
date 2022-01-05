@@ -71,7 +71,6 @@ class Trie:
         return p_crawl, True
 
 
-
 if __name__ == "__main__":
     trie_ex = Trie()
     trie_ex.insert("ab")
