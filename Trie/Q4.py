@@ -79,7 +79,7 @@ class Solution:
         # O( len(folder) *  len(max(folder)) * 27  ) time
         # O(len(folder)) time
         # O ( len(folder) * 26 * 100 ) space.
-        
+
         trie = Trie()
         for fold in folders:
             trie.insert( fold )
