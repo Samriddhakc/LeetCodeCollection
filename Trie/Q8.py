@@ -134,7 +134,7 @@ class Trie:
         # if this node has children, done here.
         # If not, retraverse and delete all nodes that doesn't have any children.
 
-        # O(len(word)) time | O(len(word)) extra space 
+        # O(len(word)) time | O(len(word)) extra space
         # urr to iterate through the trie
         curr = self.root
 
