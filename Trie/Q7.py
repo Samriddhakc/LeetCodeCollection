@@ -62,4 +62,4 @@ class FileSystem:
                 return -1
             curr = curr.map[name]
 
-        return curr.val 
+        return curr.val
