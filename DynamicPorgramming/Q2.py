@@ -38,7 +38,7 @@ class Solution:
 
 
         # O(n) time | O(1) space
-    
+
         if n == 0:
             return 0
 
