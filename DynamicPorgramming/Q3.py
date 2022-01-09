@@ -49,7 +49,7 @@ class Solution:
         # bottom-up approach
 
         # O(N^2) time | O(N) space
-        
+
         dp = [ False ] * (n + 1)
 
         for i in range(n+1):
