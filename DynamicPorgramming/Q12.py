@@ -9,5 +9,6 @@ class Solution:
 
         '''
         :param nums:
-        :return:
+        :re
+        turn:
         '''
