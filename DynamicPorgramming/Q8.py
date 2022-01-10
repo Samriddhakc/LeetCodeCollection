@@ -7,7 +7,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 class Solution:
     def maxProfit(self, prices):
 
-        # Big O. O(len(prices)) time | O(1) space 
+        # Big O. O(len(prices)) time | O(1) space
         '''
         :param prices:
         :return:
