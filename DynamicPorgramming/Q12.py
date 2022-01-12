@@ -13,8 +13,8 @@ class Solution:
         turn:
         '''
 
-        max_sum = -float(inf)
-        local_sum = -float(inf)
+        max_sum = -float('inf')
+        local_sum = -float('inf')
         for i in range(len(nums)):
             local_sum += nums[i]
             local_sum = max(local_sum, nums[i])
