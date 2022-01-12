@@ -12,3 +12,12 @@ class Solution:
         :re
         turn:
         '''
+
+        max_sum = -float(inf)
+        local_sum = -float(inf)
+        for i in range(len(nums)):
+            local_sum += nums[i]
+            local_sum = max(local_sum, nums[i])
+            max_sum = max(max_sum, local_sum)
+
+        return max_sum
