@@ -9,8 +9,8 @@ class Solution:
 
         # Big O(len(s)) time | O(len(s)) space
 
-        hash_left = [0] * (len(s) + 1)  # number of unique strings upto idx.
-        hash_right = [0] * (len(s) + 1)
+        hash_left = [0] * (len(s) + 1)  # number of unique strings upto  idx - 1.
+        hash_right = [0] * (len(s) + 1) # number of unique strings upto  idx - 1.
         l_set, r_set = set(), set()
         n = len(s)
 
