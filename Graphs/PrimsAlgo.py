@@ -20,14 +20,14 @@ class Graph:
 
         self.graph[u].append(v)
         self.cost[ ( u, v ) ] = cost
-        self.cost[ ( v , u ) ] = cost
+        self.cost[ ( v ,u ) ] = cost
 
 
 
     def findMSTOptimized(self):
 
         # O(ELogV) time | O(V) space.
-        
+
         mst_set = [False] * self.n_vert
         key = [float('inf')] * self.n_vert
         parent = [-1] * self.n_vert
