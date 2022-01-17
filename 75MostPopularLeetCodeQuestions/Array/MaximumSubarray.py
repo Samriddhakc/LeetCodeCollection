@@ -15,7 +15,7 @@ class Solution:
         #         max_sum = max( max_sum, sum(nums[s_idx: e_idx+1]) )
         #
         # return max_sum
-        # O(N) time | O(1) space  
+        # O(N) time | O(1) space
         if not nums:
             return 0
 
