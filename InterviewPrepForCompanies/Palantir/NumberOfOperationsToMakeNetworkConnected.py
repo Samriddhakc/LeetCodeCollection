@@ -44,7 +44,7 @@ class Solution:
 
         # Disjoint set algo
         num_disjoint = set()
-        nodes = [Node(i) for i in range(n)]
+        nodes = [ Node(i) for i in range(n) ]
 
         # Union the parent sets/join them before counting.
         # O ( len(connections) * lgV )  time | O(V) rpcie

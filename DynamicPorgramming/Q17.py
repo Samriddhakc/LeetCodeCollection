@@ -90,7 +90,7 @@ class Solution:
                 if rating[k] < rating[i]:
                     less_than += 1
 
-            total_count += (less_than * greater_than)
+            total_count += ( less_than * greater_than )
 
         return total_count
 
