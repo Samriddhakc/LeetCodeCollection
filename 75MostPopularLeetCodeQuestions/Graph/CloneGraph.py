@@ -19,7 +19,7 @@ class Solution:
 
         root_val = node.val
         dfs = [node]
-        visited = set([node])
+
         while dfs:
             curr_node = dfs.pop()
             # if node has already been copied, just retrieve that from a hash lookup
@@ -32,15 +32,14 @@ class Solution:
 
             # go through each neigh in the neighbors
             for neigh in curr_node.neighbors:
-                if neigh in hash_node_copy:
+
+                if neigh in hash_node_copy:  # if in copy, already visited.
                     new_node_copy.neighbors.append(hash_node_copy[neigh])
                 else:
                     neigh_copy = Node(neigh.val)
                     hash_node_copy[neigh] = neigh_copy
                     new_node_copy.neighbors.append(neigh_copy)
-
-                if neigh not in visited:
                     dfs.append(neigh)
-                    visited.add(neigh)
 
         return hash_node_copy[node]
+
