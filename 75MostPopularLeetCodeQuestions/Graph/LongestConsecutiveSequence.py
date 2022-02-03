@@ -61,7 +61,6 @@ class Solution:
                     dfs.append([nx_consecutive, curr_len + 1])
 
         return max_len
-
         # nums.sort()
         #
         # if not nums:
